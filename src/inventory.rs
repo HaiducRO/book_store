@@ -1,4 +1,5 @@
 use serde::{Deserialize, Serialize};
+use uuid::Uuid;
 
 use crate::models::Book;
 use crate::sales::Sales;
@@ -85,8 +86,8 @@ impl Inventory {
             if book.quantity >= quantity {
                 book.quantity -= quantity;
                 let total_price = book.price * quantity as f32;
-                let sale = Sales::new(1, &book.title, quantity, total_price);
-                sale.sale_log();
+                let sale = Sales::new(Uuid::new_v4(), &book.title, quantity, total_price);
+                let _ = sale.sale_log();
             } else {
                 println!("Not enough stock for {}", book_title);
             }
