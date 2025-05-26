@@ -1,1 +1,11 @@
-{"books":[{"title":"Tata","author":"dad","genre":"parenting","price":6.99,"quantity":10},{"title":"Mama","author":"mom","genre":"paenting","price":4.99,"quantity":7}]}
+{
+  "books": [
+    {
+      "title": "da",
+      "author": "da",
+      "genre": "da",
+      "price": 4.0,
+      "quantity": 5
+    }
+  ]
+}
