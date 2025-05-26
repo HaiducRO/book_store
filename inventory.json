@@ -6,6 +6,13 @@
       "genre": "da",
       "price": 4.0,
       "quantity": 5
+    },
+    {
+      "title": "eu",
+      "author": "tu",
+      "genre": "noi",
+      "price": 5.04,
+      "quantity": 5
     }
   ]
 }

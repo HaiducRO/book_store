@@ -1,7 +1,7 @@
-use book_store::cli::{self, Choice};
+use book_store::cli;
 use book_store::errs::ProjectResult;
-use book_store::inventory::{self, Inventory};
-use crate::cli::run_cli;
+use book_store::inventory::Inventory;
+
 fn main() -> ProjectResult<()>{
     let mut inventory = Inventory::new();
         if std::path::Path::new("inventory.json").exists() {
